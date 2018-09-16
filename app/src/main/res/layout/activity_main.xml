@@ -4,19 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:weightSum="1"
     tools:context="com.github.brennanananan.camerafragments.MainActivity"
     android:orientation="vertical">
 
-<fragment
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/cameraView"
-    class = "com.github.brennanananan.camerafragments.CameraFragment" />
+    <TextureView
+        android:id="@+id/cameraView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        />
 
-<!--<fragment-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="match_parent"-->
-    <!--android:id="@+id/cameraView2"-->
-    <!--class = "com.github.brennanananan.camerafragments.CameraFragment" />-->
+    <TextureView
+        android:id="@+id/cameraView2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        />
 
 </LinearLayout>
